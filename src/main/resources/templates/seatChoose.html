@@ -2,6 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>좌석 선택</title>
     <style>
         /* 스타일링을 위한 CSS 코드를 추가합니다. */
@@ -15,6 +20,10 @@
             flex-wrap: wrap;
             max-width: 500px; /* 가로로 10개씩 배열하기 위한 너비 설정 */
             margin: 0 auto;
+        }
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
         }
         .seat {
             width: 40px;
@@ -40,16 +49,30 @@
             max-width: 200px;
             padding: 10px;
         }
-        .login-button, .signup-button {
-            padding: 5px 10px;
-            background-color: #00aaff;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
     </style>
 </head>
 <body>
+<nav class = "navbar navbar-inverse navbar-fixed-top">
+    <div class = "container-fluid">
+        <div class = "navbar-header">
+            <a class = "navbar-brand" href="/main">2조 티켓예매</a>
+        </div>
+        <div id = "menu" class = "collapse navbar-collapse">
+            <ul class="nav navbar navbar-right">
+                <a th:href="|/${loginType}|"></a>
+                <div th:if="${name == null}">
+                    <a href="/members/login" class="btn btn-primary mr-2">로그인</a>
+                    <a href="/members/new" class="btn btn-primary mr-2">회원가입</a>
+                </div>
+                <div th:unless="${name == null}">
+                    <a>[[${name}]]님 환영합니다!</a>
+                    <a href="/logout" class="btn btn-primary mr-2">로그아웃</a>
+                    <a href="/mypage" class="btn btn-primary mr-2">마이페이지</a>
+                </div>
+            </ul>
+        </div>
+    </div>
+</nav>
 <div class="selection-panel">
     <h2>선택된 좌석</h2>
     <ul id="selected-seats"></ul>

@@ -61,7 +61,6 @@
                 <div th:unless="${name == null}">
                     <a>[[${name}]]님 환영합니다!</a>
                     <a href="/logout" class="btn btn-primary mr-2">로그아웃</a>
-                    <a>/</a>
                     <a href="/mypage" class="btn btn-primary mr-2">마이페이지</a>
                 </div>
             </ul>
@@ -104,7 +103,7 @@
 
     function redirectToSeatSelection() {
         // 다른 HTML 파일로 이동
-        window.location.href = 'CSeatSelect.html';
+        window.location.href = '/seatChoose';
     }
 
 </script>
