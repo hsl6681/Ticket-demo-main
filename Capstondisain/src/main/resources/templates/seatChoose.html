@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.iamport.kr/v1/iamport.js"></script>
     <title>좌석 선택</title>
     <style>
         /* 스타일링을 위한 CSS 코드를 추가합니다. */
@@ -15,10 +16,6 @@
             display: flex;
             justify-content: space-between;
             margin-top: 60px;
-        }
-        .navbar {
-            margin-bottom: 0;
-            border-radius: 0;
         }
         .seat-map {
             display: flex;
@@ -50,8 +47,26 @@
             max-width: 200px;
             padding: 10px;
         }
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
 
     </style>
+    <script>
+        IMP.init("imp81265272");
+        const onClickPay = async () => {
+            IMP.request_pay({
+                pg: "kakaopay",
+                pay_method: "card",
+                amount: "60000",
+                name: "아이유 ",
+                merchant_uid: "ORD20231122_000001",
+
+            });
+
+        };
+    </script>
 </head>
 <nav class = "navbar navbar-inverse navbar-fixed-top">
     <div class = "container-fluid">
@@ -79,9 +94,7 @@
 <div class="selection-panel">
     <h2>선택된 좌석</h2>
     <ul id="selected-seats"></ul>
-    <button  id="checkout-button">결제하기</button>
-    <script src="https://cdn.iamport.kr/v1/iamport.js"></script>
-    <script src="/templates/main.js"></script>
+    <button onclick="onClickPay()">결제하기</button>
 </div>
 
 <div id="seat-map" class="seat-map">
@@ -89,6 +102,7 @@
 </div>
 
 <script>
+
     // 좌석 데이터 (10개씩 총 70개)
     const seats = [];
     const rows = 'ABCDEFG';

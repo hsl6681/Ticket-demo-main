@@ -206,6 +206,22 @@ public class MemberController {
         return "/seatChoose";
     }
 
+    @GetMapping("/main.js")
+    public String mainJS(Model model, @SessionAttribute(name = "userId", required = false) Long userId) {
+        model.addAttribute("loginType", "session-login");
+        model.addAttribute("pageName", "세션 로그인");
+
+
+        MemberEntity loginUser = memberService.getLoginUserByMno(userId);
+
+        if(loginUser != null) {
+            model.addAttribute("name", loginUser.getMemberName());
+            model.addAttribute("email", loginUser.getMemberEmail());
+            model.addAttribute("role", loginUser.getRole());
+        }
+        return "/main";
+    }
+
 
 }
 
