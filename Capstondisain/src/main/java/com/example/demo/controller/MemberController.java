@@ -206,6 +206,10 @@ public class MemberController {
         return "/seatChoose";
     }
 
+    @GetMapping("/main")
+    public String main(Model model){
+        return "/main";
+    }
 
 
 
