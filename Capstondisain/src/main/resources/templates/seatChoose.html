@@ -59,8 +59,9 @@
             IMP.request_pay({
                 pg: "kakaopay",
                 pay_method: "card",
-                amount: "60000",
-                name: "아이유 ",
+                amount: "60000",        // 공연 가격
+                name: "아이유 ",         // 공연 이름
+                email_buy: "gd111",     // 구매자 이메일
                 merchant_uid: "ORD20231122_000001",
 
             });
@@ -94,7 +95,7 @@
 <div class="selection-panel">
     <h2>선택된 좌석</h2>
     <ul id="selected-seats"></ul>
-    <button onclick="onClickPay()">결제하기</button>
+    <button onclick="onClickPay()" id="checkout-button">결제하기</button>
 </div>
 
 <div id="seat-map" class="seat-map">
