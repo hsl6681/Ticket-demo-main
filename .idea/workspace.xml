@@ -7,8 +7,6 @@
     <list default="true" id="ca8cfe9a-cb00-460d-9b77-7880b7cf5387" name="변경" comment="2023-11-21">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Capstondisain/src/main/java/com/example/demo/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Capstondisain/src/main/java/com/example/demo/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Capstondisain/src/main/resources/templates/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Capstondisain/src/main/resources/templates/member.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Capstondisain/src/main/resources/templates/seatChoose.html" beforeDir="false" afterPath="$PROJECT_DIR$/Capstondisain/src/main/resources/templates/seatChoose.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +120,7 @@
       <workItem from="1700451703049" duration="611000" />
       <workItem from="1700464213907" duration="461000" />
       <workItem from="1700536463127" duration="2812000" />
-      <workItem from="1700638292898" duration="3682000" />
+      <workItem from="1700638292898" duration="3721000" />
     </task>
     <task id="LOCAL-00001" summary="2023-11-21">
       <option name="closed" value="true" />
@@ -132,7 +130,23 @@
       <option name="project" value="LOCAL" />
       <updated>1700638907730</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2023-11-21">
+      <option name="closed" value="true" />
+      <created>1700641985598</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700641985598</updated>
+    </task>
+    <task id="LOCAL-00003" summary="2023-11-21">
+      <option name="closed" value="true" />
+      <created>1700641991626</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700641991626</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

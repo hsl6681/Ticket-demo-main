@@ -140,7 +140,7 @@ public class MemberController {
             model.addAttribute("email", loginUser.getMemberEmail());
             model.addAttribute("role", loginUser.getRole());
         }
-        return "/changepassword";
+        return "/changePassword";
     }
     @GetMapping("/recentBooking")
     public String recentBooking(Model model, @SessionAttribute(name = "userId", required = false) Long userId) {
