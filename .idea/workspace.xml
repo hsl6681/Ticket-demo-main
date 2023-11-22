@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca8cfe9a-cb00-460d-9b77-7880b7cf5387" name="변경" comment="2023-11-21">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ca8cfe9a-cb00-460d-9b77-7880b7cf5387" name="변경" comment="2023-11-22 09-16">
       <change beforePath="$PROJECT_DIR$/Capstondisain/src/main/resources/templates/seatChoose.html" beforeDir="false" afterPath="$PROJECT_DIR$/Capstondisain/src/main/resources/templates/seatChoose.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,7 +132,7 @@
       <workItem from="1700451703049" duration="611000" />
       <workItem from="1700464213907" duration="461000" />
       <workItem from="1700536463127" duration="2812000" />
-      <workItem from="1700638292898" duration="11896000" />
+      <workItem from="1700638292898" duration="11947000" />
     </task>
     <task id="LOCAL-00001" summary="2023-11-21">
       <option name="closed" value="true" />
@@ -183,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700654661217</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="2023-11-22 09-16">
+      <option name="closed" value="true" />
+      <created>1700655392904</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1700655392904</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +198,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2023-11-21" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023-11-21" />
+    <MESSAGE value="2023-11-22 09-16" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023-11-22 09-16" />
   </component>
 </project>
